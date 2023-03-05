@@ -8,17 +8,17 @@ const choices = [
 let playerScore = 0
 let computerScore = 0
 
-for(i = 0; i < 5; i ++){
+for( i = 0; i < 5; i ++){
 
     let promtChoice = prompt("pick rock, paper, or scissors");
     let playerChoice = promtChoice.toLocaleLowerCase();
     let computerResult = getComputerChoice();
 
 
-    function getComputerChoice(){ //I dont know what the (array) paramater is used for
-        const randomIndex = Math.floor(Math.random()*choices.length);
-        const item = choices[randomIndex]; //sets const item as the element from the choices array at the [randomIndex] possition 
-        return item;
+    function getComputerChoice(){    //I dont know what the (array) paramater is used for
+        const randomIndex = Math.floor(Math.random()*choices.length);    //math.Floor rounds (whatever is in here) down. Math.random picks a number between 0 and 1. and choices.length is how many items are in the choices array 
+        const computerChoice = choices[randomIndex];    //sets const item as the element from the choices array at the [randomIndex] possition 
+        return computerChoice;
     }
 
     singleRound(playerChoice, computerResult);
