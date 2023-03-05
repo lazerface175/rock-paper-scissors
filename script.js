@@ -21,9 +21,9 @@ for( i = 0; i < 5; i ++){
         return computerChoice;
     }
 
-    singleRound(playerChoice, computerResult);
+    playFiveRounds(playerChoice, computerResult);
     
-    function singleRound(playerSeletion, computerSelection){
+    function playFiveRounds(playerSeletion, computerSelection){
 
         if (playerSeletion === computerSelection){
             gameResult = "TIE!";
