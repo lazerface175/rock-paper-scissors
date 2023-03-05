@@ -14,14 +14,15 @@ for(i = 0; i < 5; i ++){
     let playerChoice = promtChoice.toLocaleLowerCase();
     let computerResult = getComputerChoice();
 
-    singleRound(playerChoice, computerResult);
 
     function getComputerChoice(){ //I dont know what the (array) paramater is used for
         const randomIndex = Math.floor(Math.random()*choices.length);
-        const item = choices[randomIndex];
+        const item = choices[randomIndex]; //sets const item as the element from the choices array at the [randomIndex] possition 
         return item;
     }
 
+    singleRound(playerChoice, computerResult);
+    
     function singleRound(playerSeletion, computerSelection){
 
         if (playerSeletion === computerSelection){
@@ -55,12 +56,12 @@ for(i = 0; i < 5; i ++){
     }
 
 
-    //const computerResult = getComputerChoice(); //I dont know what the (array) argument is used for
     console.log(computerResult)
-    //singleRound(playerChoice, computerResult)
     console.log(gameResult)
     console.log("player: " + playerScore)
     console.log("computer: " + computerScore)
+    //const computerResult = getComputerChoice(); //I dont know what the (array) argument is used for
+    //singleRound(playerChoice, computerResult)
     //console.log(singleRound(playerChoice, computerResult))
 };
 
