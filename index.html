@@ -9,18 +9,23 @@
 </head>
 <body>
     <div class="score">
-        <div class="playerScore"><h2>Your Score: 0</h2></div>
-        <div class="computerScore"><h2>Computer Score: 0</h2></div>
+        <div class="leftScore">
+            <h2>Your Score:<h2 id="playerScore">0</h2></h2>
+        </div>
+        <div class="rightScore">
+            <h2>Computer Score:<h2 id="computerScore">0</h2></h2>
+        </div>
     </div>
     <div class="game">
-        <div><h1>What is your choice?</h1></div>
+        <div><h2 class="chatBox"></h2></div>
+        <div id="text"><h1>What is your choice?</h1></div>
     </div>
-    <div class="choices">
-        <button class="rock"><h1>ROCK</h1></button>
+    <div id="choices">
+        <button class="rock"><h1 id="test">ROCK</h1></button>
         <button class="paper"><h1>PAPER</h1></button>
         <button class="scissors"><h1>SCISSORS</h1></button>
     </div>
 
-   <!--<script src="./script.js"></script>-->
+   <script src="./script.js"></script>
 </body>
 </html>

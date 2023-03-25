@@ -11,3 +11,7 @@ body {
 .game {
 
 }
+
+button {
+    border-radius: 15px;
+}
